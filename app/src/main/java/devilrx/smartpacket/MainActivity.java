@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
@@ -47,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void  startCapture(View v) {
+        finish();
+    }
+    public void  stopAndExitActivity(View v) {
+        finish();
     }
 
     private int loadTcpdumpFromAssets(){

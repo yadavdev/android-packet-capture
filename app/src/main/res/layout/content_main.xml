@@ -17,4 +17,28 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"
         android:id="@+id/main_tv" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Capture"
+        android:id="@+id/button_packet_capture"
+        android:onClick="startCapture"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/buttons" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop and Exit"
+        android:id="@+id/button_exit"
+        android:onClick="stopAndExitActivity"
+        android:layout_below="@+id/button_packet_capture"
+        android:layout_alignLeft="@+id/button_packet_capture"
+        android:layout_alignStart="@+id/button_packet_capture"
+        android:layout_marginTop="37dp"
+        android:layout_alignRight="@+id/button_packet_capture"
+        android:layout_alignEnd="@+id/button_packet_capture"
+        android:theme="@style/buttons" />
 </RelativeLayout>
